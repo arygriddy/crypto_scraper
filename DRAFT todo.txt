@@ -1,0 +1,32 @@
+1. requirements 
+
+a) what fields/variables/trade granuality do we need and are we getting from each source(gdax,polonix,etc...)
+
+for example:
+
+data_source,timestamp,asset_name,asset_open_value,asset_close_value,etc...
+
+gdax,bitcon,2017-03-21T23:13:18Z,$4200.00,4250.00,....
+gdax,bitcon,2017-03-21T23:13:18Z,$4200.00,4250.00,....
+
+These will be inputs to machine learning algorithms
+b) what to do with missing data (empty strings, null, N/A, no data for that time) 
+* skip record
+* estimate based on last 3 records
+* actually use missing data as another signal 
+
+
+
+2. write a scrappers for
+
+a) gdax
+b) polonix
+c) kraken
+d) bitfinx
+e) bittex
+f) (bloomberg, juno trader, ninja whichever is cheapest) 
+
+
+g) make all to output in timeseries CSV file and also a equal length arrays with same columms 
+
+Feel free to make changes. 
